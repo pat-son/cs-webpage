@@ -1,0 +1,198 @@
+/*  Patrick Son
+    Patrick_Son@student.uml.edu
+    University of Massachusetts, Lowell
+    COMP 4610-201
+    September 12, 2016
+    Main style sheet for my university webpage.
+      In this iteration, much of the CSS is reused from my original site,
+      now located at http://www.cs.uml.edu/~pson/index_old.html
+*/
+
+/*** General Styles ***/
+/* Styles that don't apply to a specific section */
+
+html, body {
+    height: 100%; /* explicit height set for flexbox */
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 160%;
+}
+
+.preload * {
+    transition: none !important; /* Prevent transitions from firing when the page loads */
+                                 /* This is disabled via JS once the page loads. */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/*** Styles for header ***/
+
+#topbar {
+    background-color: #ff4d4d;
+    overflow: hidden;
+}
+
+header {
+    width: 75%;
+    margin: auto;
+}
+
+#header-portrait {
+    width: 100px;
+    border-radius: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+#header-title {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.header-icon {
+    position: relative;
+    font-weight: bold;
+}
+
+/*** Styles for main content area ***/
+
+#main-content {
+    width: 75%;
+    margin: auto;
+    flex: 1; /* Main content area grows to push the footer down to the bottom edge of the window */
+}
+
+#main-content a:link {
+	color: #0a8bdb;
+	text-decoration: none ;
+}
+
+#main-content a:visited {
+	color: #6d3a98 ;
+	text-decoration: none ;
+}
+
+#main-content a:hover {
+	text-decoration: underline ;
+}
+
+h2 {
+    color: #800D0D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*** Styles for project list ***/
+/* Some behavior of the project boxes, such as the actual expanding/collapsing, is defined in JS */
+
+.project-box {
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: border-color .25s;
+    overflow: hidden;
+    height: 25px;
+}
+
+.project-box.hoverable {
+    transition: border-color .25s;
+}
+
+.project-box.hoverable:hover {
+    border: 3px solid;
+    border-color: #ff4d4d;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.project-box p {
+    font-size: 16px;
+}
+
+.project-box a {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.project-box .info {
+    padding: 10px 10px 0px 10px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+.info a {
+    font-weight: normal;
+}
+
+.symbol-expand {
+    opacity: 0;
+    color: gray;
+    float: right;
+    transition: opacity .25s ease-in;
+    padding: 5px;
+}
+
+.symbol-collapse {
+    display: none;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.project-box.hoverable:hover .symbol-expand {
+    opacity: 1;
+}
+
+/*** Styles for footer ***/
+
+footer {
+    width: 75%;
+    margin: 50px auto 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* change the color of the HTML5/CSS# icons on hover just for fun */
+footer a:hover .fa-html5 {
+    color: #F16529;
+    transition: color .3s ease-in;
+}
+
+footer a:hover .fa-css3 {
+    color: #1C88C7;
+    transition: color .3s ease-in;
+}

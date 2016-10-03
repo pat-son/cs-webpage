@@ -1,0 +1,11 @@
+# Ignore junk for-fun stuff
+/misc
+
+# Ignore school-related stuff
+/backpack
+
+# Ignore old version of page
+/old
+
+# Ignore my resume
+patrick_sons_resume.pdf

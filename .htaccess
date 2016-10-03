@@ -1,0 +1,2 @@
+ErrorDocument 404 /~pson/notfound.html
+Redirect /~pson/inclass-1/index.html /~pson/inclass-1/lorem-ipsum.html

@@ -1,0 +1,131 @@
+/*  Patrick Son
+    Patrick_Son@student.uml.edu
+    University of Massachusetts, Lowell
+    COMP 4610-201
+    September 15, 2016
+    Style sheet for Homework 3
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+#wrapper {
+	width: 80%;
+	min-width: 600px;
+	margin: auto;
+	background-color: #90C8E3;
+}
+
+/*** My styles ***/
+
+/* Header Styles */
+
+header {
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000230;
+}
+
+header h1 {
+	color: white;
+}
+
+/* Nav styles */
+
+nav {
+	background-color: #90C8E3;
+	float: left;
+	width: 180px;
+	height: 100%;
+	overflow: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:link {
+	color: #000230;
+}
+
+/* Content styles */
+
+#content {
+	overflow: hidden;
+	background-color: white;
+	padding: 0 20px 30px 30px;
+}
+
+#content img {
+	float: left;
+	margin-right: 20px;
+}
+
+#content li {
+	list-style-image: url("marker.gif");
+	list-style-position: inside;
+}
+
+.resort {
+	font-weight: bold;
+	color: #2e8ab8;
+}
+
+/* Footer styles */
+
+footer {
+	background-color: white;
+	padding: 20px;
+	margin-left: 180px;
+	font-style: italic;
+	font-size: .75em;
+}
+
+/*** Pre-existing styles styles ***/
+
+body {
+	background-image: url("ptrbackground.jpg");
+	background-repeat: repeat-x;
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+	font-size: 1.2em;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
