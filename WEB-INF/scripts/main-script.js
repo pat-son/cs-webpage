@@ -27,7 +27,7 @@ var expandedBox; //keep track of which box is currently expanded.
 
 $(document).ready(function() {
     $("body").removeClass("preload"); //enable CSS3 animations once page is ready.
-    $("#topbar").height($("#header-title").outerHeight(true))
+    //$("#topbar").height($("#header-title").outerHeight(true))
 
     $(".project-box").one('click', expandBox); //bind expandBox to each box only once.
 

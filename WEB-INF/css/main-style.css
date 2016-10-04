@@ -42,7 +42,7 @@ p {
 
 #topbar {
     background-color: #ff4d4d;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 header {
@@ -50,29 +50,53 @@ header {
     margin: auto;
 }
 
-#header-portrait {
-    width: 100px;
-    border-radius: 100%;
-    vertical-align: middle;
-    text-decoration: none;
+@media only screen and (max-width: 650px) {
+
+    header {
+        width: 100%;
+    }
+
+    #header-portrait {
+        vertical-align: middle;
+        width: 100px;
+    }
+
+    #header-title {
+        color: white;
+        display: inline-block;
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
-#header-title {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4em;
+@media only screen and (max-width: 326px) {
+    #header-portrait {
+        width: 75px;
+    }
+
+}
+
+@media only screen and (min-width: 651px) {
+    #header-portrait {
+        width: 100px;
+        border-radius: 100%;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+    #header-title {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4em;
+    }
 }
 
 header a {
     text-decoration: none;
-}
-
-.header-icon {
-    position: relative;
-    font-weight: bold;
 }
 
 /*** Styles for main content area ***/
