@@ -2,10 +2,8 @@
     Patrick_Son@student.uml.edu
     University of Massachusetts, Lowell
     COMP 4610-201
-    September 12, 2016
+    October 4, 2016
     Main style sheet for my university webpage.
-      In this iteration, much of the CSS is reused from my original site,
-      now located at http://www.cs.uml.edu/~pson/index_old.html
 */
 
 /*** General Styles ***/
@@ -50,8 +48,8 @@ header {
     margin: auto;
 }
 
+/* Show small header on smaller screens */
 @media only screen and (max-width: 650px) {
-
     header {
         width: 100%;
     }
@@ -70,13 +68,14 @@ header {
     }
 }
 
+/* Very small screens need an even smaller image to prevent text wrapping */
 @media only screen and (max-width: 326px) {
     #header-portrait {
         width: 75px;
     }
-
 }
 
+/* Larger screens get the big header */
 @media only screen and (min-width: 651px) {
     #header-portrait {
         width: 100px;
