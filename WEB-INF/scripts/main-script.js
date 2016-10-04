@@ -2,7 +2,7 @@ function collapseBox(node) {
     //Animate box into its collapsed height and toggle symbols.
     node.addClass("hoverable");
     infoBox = node.find(".info");
-    node.animate({height: '-=' + infoBox.outerHeight(true)}, 500, function() {infoBox.hide();});
+    node.animate({height: '-=' + infoBox.outerHeight(true)}, 500);
     node.find(".symbol-collapse").hide();
     node.find(".symbol-expand").show();
 
@@ -18,7 +18,6 @@ function expandBox(e) {
     expandedBox = $(this);
     expandedBox.removeClass("hoverable");
     infoBox = expandedBox.find(".info");
-    infoBox.show();
     expandedBox.animate({height: '+=' + infoBox.outerHeight(true)}, 500);
     expandedBox.find(".symbol-expand").hide();
     expandedBox.find(".symbol-collapse").show();
