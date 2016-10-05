@@ -25,6 +25,11 @@ p {
     line-height: 160%;
 }
 
+li {
+    margin: 5px 0;
+    line-height: 130%;
+}
+
 .preload * {
     transition: none !important; /* Prevent transitions from firing when the page loads */
                                  /* This is disabled via JS once the page loads. */
@@ -171,6 +176,7 @@ h2 {
     font-weight: normal;
 }
 
+/* animating and styling the expand/collapse buttons */
 .symbol-expand {
     opacity: 0;
     color: gray;
@@ -209,7 +215,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* change the color of the HTML5/CSS# icons on hover just for fun */
+/* change the color of the HTML5/CSS3 icons on hover just for fun */
 footer a:hover .fa-html5 {
     color: #F16529;
     transition: color .3s ease-in;
