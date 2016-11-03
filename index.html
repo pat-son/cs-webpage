@@ -3,7 +3,7 @@
      Patrick_Son@student.uml.edu
      University of Massachusetts, Lowell
      COMP 4610-201
-     October 3, 2016
+     Updated November 1, 2016
      Index page for Patrick Son's university website, containing 
         basic info and links to Assignments for GUI Programming
 -->
@@ -12,13 +12,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Patrick Son at cs.uml.edu</title>
-        <link rel="shortcut icon" href="/~pson/WEB-INF/img/favicon.ico">
+        <link rel="shortcut icon" href="WEB-INF/img/favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/~pson/WEB-INF/css/main-style.css">
-        <script src="/~pson/WEB-INF/scripts/main-script.js"></script>
+        <link rel="stylesheet" href="WEB-INF/css/main-style.css">
+        <script src="WEB-INF/scripts/main-script.js"></script>
     </head>
     <body>
 
@@ -27,8 +27,8 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="/~pson/">
-                        <img id="header-portrait" src="/~pson/WEB-INF/img/patrick-whitehouse-small" alt="Patrick Son in front of the White House" title="A picture of me in front of the White House"/>
+                        <a href="">
+                        <img id="header-portrait" src="WEB-INF/img/patrick-whitehouse-small" alt="Patrick Son in front of the White House" title="A picture of me in front of the White House"/>
                         <h1>Patrick Son</h1></a>
                     </div>
                 </div>
@@ -62,16 +62,18 @@
 
                             <div id="project-list" class="col-lg-5 col-lg-pull-7">
 
+                                <!-- Each project item has data hidden in it that gets added to the jumbotron above on click -->
+
                                 <div class="project-item">
                                     Homework 2: Index Page
                                     <i class="fa fa-html5 fa-fw p-icon"></i>
                                     <div class="project-info">
-                                        <h3 class="project-info-title">Index Page</h3>
+                                        <h3 class="project-info-title"><a href="#">Index Page</a></h3>
                                         <p>The second homework assignment was this very page. It is to act as an index page
                                             for future homework assignments.</p>
                                         <p>Some of the CSS for this page was reused from my original CS webpage 
                                             (in particular: link, h2, and p styles). However, most of it is brand new. 
-                                            The old page can be found <a href="/~pson/old" target="_blank">here</a>.
+                                            The old page can be found <a href="old" target="_blank">here</a>.
                                         </p>
                                     </div>
                                 </div>
@@ -80,11 +82,11 @@
                                     In-Class Exercise 1: CSS Basics
                                     <i class="fa fa-css3 fa-fw p-icon"></i>
                                     <div class="project-info">
-                                        <h3 class="project-info-title">CSS Basics</h3>
+                                        <h3 class="project-info-title"><a href="inclass-1/lorem-ipsum.html">CSS Basics</a></h3>
                                         <p>In this exercise, CSS selectors were used to style a page without adding
                                             or changing any HTML tags or attributes.</p>
-                                        <p>Compare the <a href="/~pson/inclass-1/lorem-ipsum.html" target="_blank">finished page</a> with 
-                                            the same page <a href="/~pson/inclass-1/ic1-no-css.html" target="_blank">without CSS.</a></p>
+                                        <p>Compare the <a href="inclass-1/lorem-ipsum.html" target="_blank">finished page</a> with 
+                                            the same page <a href="inclass-1/ic1-no-css.html" target="_blank">without CSS.</a></p>
                                     </div>
                                 </div>
 
@@ -92,10 +94,10 @@
                                     Homework 3: Style a site with External CSS
                                     <i class="fa fa-css3 fa-fw p-icon"></i>
                                     <div class="project-info">
-                                        <h3 class="project-info-title">Style a site with External CSS</h3>
+                                        <h3 class="project-info-title"><a href="hw3/">Style a site with External CSS</a></h3>
                                         <p>This assignment tasked us with styling a webpage with CSS so that it matches a specification as close as possible.
-                                            <a href="/~pson/hw3/no-style">Click here</a> to view the page as it appeared before I added CSS styles.</p>
-                                        <p><a href="/~pson/hw3/HW3_handout">Click here</a> to view screenshots of how the page is supposed to look.</p>
+                                            <a href="hw3/no-style">Click here</a> to view the page as it appeared before I added CSS styles.</p>
+                                        <p><a href="hw3/HW3_handout">Click here</a> to view screenshots of how the page is supposed to look.</p>
                                     </div>
                                 </div>
 
@@ -103,9 +105,9 @@
                                     In-Class Exercise 2: CSS Box Model
                                     <i class="fa fa-css3 fa-fw p-icon"></i>
                                     <div class="project-info">
-                                        <h3 class="project-info-title">CSS Box Model</h3>
+                                        <h3 class="project-info-title"><a href="inclass-2/">CSS Box Model</a></h3>
                                         <p>This exercise tasked us once again with giving style to an existing HTML document, this time focusing on the <a href="http://www.w3schools.com/css/css_boxmodel.asp">box model</a> of CSS.</p>
-                                        <p><a href="/~pson/inclass-2/no-css.html">Click here</a> to view the page without any CSS.</p>
+                                        <p><a href="inclass-2/no-css.html">Click here</a> to view the page without any CSS.</p>
                                     </div>
                                 </div>
 
@@ -113,7 +115,7 @@
                                     Homework 4: Styling the Index Page
                                     <i class="fa fa-css3 fa-fw p-icon"></i>
                                     <div class="project-info">
-                                        <h3 class="project-info-title">Styling the Index Page</h3>
+                                        <h3 class="project-info-title"><a href="hw4/">Styling the Index Page</a></h3>
                                         <p>The fourth homework assignment was to style your homepage using newly learned CSS techniques. However, I had already added CSS to my index page.</p>
                                             <p>I did make some small additions:</p>
                                                 <ul>
@@ -121,7 +123,7 @@
                                                     <li>I added some responsive CSS to the top bar/header because it was misbehaving on smaller display widths. Try resizing the browser window to see it in action.</li>
                                                     <li>Minor tweaks to existing styles (colors, etc.).</li>
                                                 </ul>
-                                        <p>For fun, <a href="javascript:void(0)" id="remove-styles">click here</a> to view this page as it would appear without a single line of CSS. Refresh the page to bring it back.</p>
+                                        <p>This page has since been redone using Bootstrap. To view the old page, click the link above.</p>
                                     </div>
                                 </div>
 
@@ -129,8 +131,17 @@
                                     In-Class Exercise 3: Intro to Bootstrap
                                     <i class="fa fa-css3 fa-fw p-icon"></i>
                                     <div class="project-info">
-                                        <h3 class="project-info-title">Intro to Bootstrap</h3>
+                                        <h3 class="project-info-title"><a href="inclass-3">Intro to Bootstrap</a></h3>
                                         <p>This exercise was meant to be an introduction to using <a href="http://getbootstrap.com/">Bootstrap</a>, a CSS framework to make designing responsive layouts easier.</p>
+                                    </div>
+                                </div>
+
+                                <div class="project-item">
+                                    Homework 5: Intro to Github
+                                    <i class="fa fa-css3 fa-fw p-icon"></i>
+                                    <div class="project-info">
+                                        <h3 class="project-info-title"><a href="https://pat-son.github.io/cs-webpage/">Intro to Github</a></h3>
+                                        <p>Homework 5 was simply to put our code on a Github repository and host our web page on Github Pages.</p>
                                     </div>
                                 </div>
 
