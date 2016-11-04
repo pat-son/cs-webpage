@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Patrick Son
+     Patrick_Son@student.uml.edu
+     University of Massachusetts, Lowell
+     COMP 4610-201
+     November 3, 2016
+     Homework 6: JavaScript Multiplication Table
+        The HTML is very simple, just a few input fields and a button. The table
+        is created dynamically in JavaScript
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Multiplication Table</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div id="main-content">
+
+            <h1>Multiplication Table</h1>
+
+            <!-- Forms go here -->
+            <div id="data-area">
+                <p>Enter a range for the columns:</p>
+                <input id="colLower" placeholder="Lower bound">
+                <input id="colUpper" placeholder="Upper bound">
+                <i class="fa fa-warning" id="col-icon"></i><span id="col-warning" class="warning-label"></span>
+                <p>Enter a range for the rows:</p>
+                <input id="rowLower" placeholder="Lower bound">
+                <input id="rowUpper" placeholder="Upper bound">
+                <i class="fa fa-warning" id="row-icon"></i><span id="row-warning" class="warning-label"></span>
+            </div>
+
+            <!-- Button goes here. Calculator and warning icons from Font Awesome: http://fontawesome.io/ -->
+            <button id="submit">Calculate <i class="fa fa-calculator"></i></button>
+            
+            <!-- Table rows and cells will be added in JavaScript -->
+            <div id="table-wrapper">
+                <table id="table">
+                </table>
+            </div>
+        </div>
+
+    <!-- script goes at the bottom so it can see the HTML nodes. -->
+    <script src="script.js"></script>
+    </body>
+</html>
