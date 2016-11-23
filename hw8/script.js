@@ -3,8 +3,10 @@
      University of Massachusetts, Lowell
      COMP 4610-201
      November 3, 2016
-     Homework 7: JavaScript Multiplication Table v2
-        New and improved! Now uses JQuery
+     Homework 8: JavaScript Multiplication Table v3
+        Added sliders for the inputs.
+        Wasn't able to get tabs working; going to use a resubmission token to 
+        fix it
 ***/
 
 function drawTable() {
@@ -118,6 +120,7 @@ $(document).ready(function() {
 
     drawTable();
 
+    // Update the sliders if the input is valid
     $("#colLower").on("blur", function() {
         if($("#colLower").valid()) {
             $("#colLowerSlider").slider("value", $(this).val());
@@ -146,8 +149,10 @@ $(document).ready(function() {
         }
     });
 
+    // set up sliders. 
     $("#colLowerSlider").slider({min: 0, max: 100, value: 0,
         change: function(e, ui) {
+            // update input field
             $("#colLower").val(ui.value);
             drawTable();
         }});
@@ -167,6 +172,7 @@ $(document).ready(function() {
             drawTable();
         }});
 
+    // TODO: get the tabs working
     $("#table-wrapper").tabs();
     $("#submit").click(function() {
         $("#tab-list").append('<li><a href="#b">Tab B</a></li>');
