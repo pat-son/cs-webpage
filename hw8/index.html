@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Patrick Son
+     Patrick_Son@student.uml.edu
+     University of Massachusetts, Lowell
+     COMP 4610-201
+     November 3, 2016
+     Homework 8: JavaScript Multiplication Table v3
+        The HTML is very simple, just a few input fields and a button. The table
+        is created dynamically in JavaScript
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Multiplication Table</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body>
+
+        <div id="main-content">
+
+            <h1>Multiplication Table</h1>
+
+            <!-- Form goes here -->
+            <form id="dataEntry">
+                <p>
+                    <label for="colLower">Enter a lower bound for the columns:</label>
+                    <input id="colLower" class="input" name="colLower" placeholder="Lower bound" value="0">
+                    <div id="colLowerSlider"></div>
+                </p>
+                <p>
+                    <label for="colUpper">Enter an upper bound for the columns:</label>
+                    <input id="colUpper" class="input" name="colUpper" placeholder="Upper bound" value="10">
+                    <div id="colUpperSlider"></div>
+                </p>
+
+                <p>
+                    <label for="rowLower">Enter a lower bound for the rows:</label>
+                    <input id="rowLower" class="input" name="rowLower" placeholder="Lower bound" value="0">
+                    <div id="rowLowerSlider"></div>
+                </p>
+                <p>
+                    <label for="rowUpper">Enter an upper bound for the rows:</label>
+                    <input id="rowUpper" class="input" name="rowUpper" placeholder="Upper bound" value="10">
+                    <div id="rowUpperSlider"></div>
+                </p>
+                
+            </form>
+
+            <!-- Button goes here. Calculator and warning icons from Font Awesome: http://fontawesome.io/ -->
+            <button id="submit">New Tab <i class="fa fa-folder"></i></button>
+            
+            <!-- Table rows and cells will be added in JavaScript -->
+            <div id="table-wrapper">
+                <ul id="tab-list">
+                    <li><a href="#a">(0, 10), (0, 10)</a></li>
+                </ul>
+                <div id="#a" class="active">
+                    <table class="table">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
