@@ -1,0 +1,33 @@
+#game {
+    width: 80%;
+    margin: auto;
+}
+#rack {
+    width: 768px;
+    height: 218px;
+    background-image: url("img/rack.png");
+    background-size: 768px 218px;
+}
+
+.board-space {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: #dfdfb9;
+}
+
+.double-letter {
+    background-color: #ffb3b3;
+}
+
+.rack-space {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 50px;
+}
+
+.rack-space:first-of-type {
+    margin-left: 20px;
+}
