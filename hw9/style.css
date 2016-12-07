@@ -1,3 +1,21 @@
+/*** Patrick Son
+     Patrick_Son@student.uml.edu
+     University of Massachusetts, Lowell
+     COMP 4610-201
+     December, 2016
+     Simple CSS for Scrabble game
+        Didn't feel like making it very pretty.
+***/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf3e9;
+}
+
+p {
+    font-size: 20px;
+}
+
 #game {
     width: 80%;
     margin: auto;
@@ -6,28 +24,52 @@
     width: 768px;
     height: 218px;
     background-image: url("img/rack.png");
-    background-size: 768px 218px;
+    background-size: 768px 218px; /* scaled up 20% from original */
 }
 
 .board-space {
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
+    padding: 5px; /* with padding, total size is 100x100 pixels */
     background-color: #dfdfb9;
 }
 
 .double-letter {
     background-color: #ffb3b3;
+    background-image: url("img/two-times.png");
+}
+
+#controls {
+    margin: 30px 0;
+}
+
+.warning {
+    color: orange;
+}
+
+button {
+    font-size: 20px;
 }
 
 .rack-space {
+    padding: 5px;
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin-top: 50px;
+    width: 90px;
+    height: 90px;
+    margin-top: 50px; /* center tiles in rack */
 }
 
 .rack-space:first-of-type {
     margin-left: 20px;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    background-size: 90px 90px; /* background image set in javascript */
+}
+
+.tile div {
+    display: none; /* div to hold the letter of the tile */
 }
