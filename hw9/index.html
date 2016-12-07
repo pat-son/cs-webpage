@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Patrick Son
+     Patrick_Son@student.uml.edu
+     University of Massachusetts, Lowell
+     COMP 4610-201
+     December, 2016
+     HTML for Scrabble
+        I wanted to do the whole board, but ran out of time doing other projects.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scrabble</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>
+    <body>
+
+        <div id="game">
+
+            <h1>Scrabble</h1>
+            <div id="board">
+                <div id="s1" class="board-space ui-droppable"></div>
+                <div id="s2" class="board-space double-letter ui-droppable"></div>
+                <div id="s3" class="board-space ui-droppable"></div>
+                <div id="s4" class="board-space ui-droppable"></div>
+                <div id="s5" class="board-space ui-droppable"></div>
+                <div id="s6" class="board-space double-letter ui-droppable"></div>
+                <div id="s7" class="board-space ui-droppable"></div>
+            </div>
+
+            <div id="controls">
+                <button id="check">Check Word</button>     <!-- Check if word is valid -->
+                <button id="submit">Submit Word</button>   <!-- Check word and add to total score -->
+                <button id="reset">New tiles</button>      <!-- Reset tiles only -->
+                <button id="restart">Restart Game</button> <!-- Reset game and score -->
+            </div>
+
+            <!-- Messages to the player -->
+            <p id="message">Drag letters to form a word.</p> <!-- This message can be changed in JS -->
+            <p id="score">Total Score: 0</p>
+
+            <div id="rack">
+                <div class="rack-space ui-droppable"></div>
+                <div class="rack-space ui-droppable"></div>
+                <div class="rack-space ui-droppable"></div>
+                <div class="rack-space ui-droppable"></div>
+                <div class="rack-space ui-droppable"></div>
+                <div class="rack-space ui-droppable"></div>
+                <div class="rack-space ui-droppable"></div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
