@@ -2,7 +2,7 @@
      Patrick_Son@student.uml.edu
      University of Massachusetts, Lowell
      COMP 4610-201
-     November 3, 2016
+     December 9, 2016
      Homework 8: JavaScript Multiplication Table v3
         For the CSS, I decided to go with a darker theme than the rest of the 
         site to reinforce the idea that this is a separate page.
@@ -52,10 +52,9 @@ input {
     margin: 0px 8px;
 }
 
-#submit {
+button {
     cursor: pointer;
     outline: none;
-    background: #1E90FF;
     color: white;
     border: 0px;
     border-radius: 10px;
@@ -64,12 +63,28 @@ input {
     margin: 20px 0;
 }
 
+#submit {
+    background: #1E90FF;
+}
+
 #submit:hover {
     background-color: #005A9C;
 }
 
 #submit:active {
     background-color: blue;
+}
+
+#remove {
+    background-color: red;
+}
+
+#remove:hover {
+    background-color: #ff4d4d;
+}
+
+#remove:active {
+    background-color: #b30000;
 }
 
 /* Allow for table scrolling */
@@ -113,4 +128,8 @@ tr:nth-child(even) td:nth-child(even) {
 
 tr:nth-child(odd) td:nth-child(odd) {
     background-color: black;
+}
+
+.hidden-data {
+    display: none;
 }

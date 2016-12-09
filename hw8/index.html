@@ -3,11 +3,9 @@
      Patrick_Son@student.uml.edu
      University of Massachusetts, Lowell
      COMP 4610-201
-     November 3, 2016
+     December 9, 2016
      Homework 8: JavaScript Multiplication Table v3
-        Added sliders for the inputs
-        The tabs don't quite work yet. I'm planning on using a resubmission 
-        token to finish them.
+        Tabs are working now.
 -->
 <html lang="en">
     <head>
@@ -55,15 +53,22 @@
 
             <!-- Button goes here. Calculator and warning icons from Font Awesome: http://fontawesome.io/ -->
             <button id="submit">New Tab <i class="fa fa-folder"></i></button>
+            <button id="remove">Remove Selected <i class="fa fa-times-circle"></i></button>
             
             <!-- Table rows and cells will be added in JavaScript -->
             <div id="table-wrapper">
                 <ul id="tab-list">
-                    <li><a href="#a">(0, 10), (0, 10)</a></li>
+                    <li class="selected"><a href="#tab-1">(0, 10) x (0, 10)</a></li>
                 </ul>
-                <div id="#a" class="active">
+                <div id="tab-1" class="active">
                     <table class="table">
                     </table>
+                    <div class="hidden-data">
+                        <div class="hidden-colLower">0</div>
+                        <div class="hidden-colUpper">10</div>
+                        <div class="hidden-rowLower">0</div>
+                        <div class="hidden-rowUpper">10</div>
+                    </div>
                 </div>
             </div>
         </div>
