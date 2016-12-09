@@ -52,10 +52,9 @@ input {
     margin: 0px 8px;
 }
 
-#submit {
+button {
     cursor: pointer;
     outline: none;
-    background: #1E90FF;
     color: white;
     border: 0px;
     border-radius: 10px;
@@ -64,12 +63,28 @@ input {
     margin: 20px 0;
 }
 
+#submit {
+    background: #1E90FF;
+}
+
 #submit:hover {
     background-color: #005A9C;
 }
 
 #submit:active {
     background-color: blue;
+}
+
+#remove {
+    background-color: red;
+}
+
+#remove:hover {
+    background-color: #ff4d4d;
+}
+
+#remove:active {
+    background-color: #b30000;
 }
 
 /* Allow for table scrolling */
@@ -113,4 +128,8 @@ tr:nth-child(even) td:nth-child(even) {
 
 tr:nth-child(odd) td:nth-child(odd) {
     background-color: black;
+}
+
+.hidden-data {
+    display: none;
 }
