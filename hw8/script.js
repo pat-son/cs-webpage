@@ -2,7 +2,7 @@
      Patrick_Son@student.uml.edu
      University of Massachusetts, Lowell
      COMP 4610-201
-     November 3, 2016
+     December 9, 2016
      Homework 8: JavaScript Multiplication Table v3 Resumbission
         Got tabs working, but didn't implement the "remove multiple" feature
 ***/
